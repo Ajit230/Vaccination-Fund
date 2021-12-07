@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Vaccination</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container" style="background-color: transparent;">
+      <div class="nav-bar">
+        <div class="brand navbar-brand">
+          <img src="/logo.jpg" class="navbar-icon" alt="img">
+          <a href="#hero">
+            <h1><span>V</span>ACC<span>I</span>NAT<span>I</span>ON F<span>U</span>ND </h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Aim</a></li>
+            <li><a href="#projects" data-after="register">Support Us</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <!-- <li><a href="#insight" data-after="Contact">Helpline</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Let's Get <span></span></h1>
+        <h1>The World <span></span></h1>
+        <h1>VACCINATED <span></span></h1>
+        <a href="#projects" type="button" class="cta">Go Give One</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+<!-- Service Section -->
+  <section id="services">
+    <div class="services-container">
+      <div class="adw">
+        <h1 class="section-title"><span>O</span>UR M<span>I</span>SS<span>I</span>ON</h1><br>
+        <div class="drt">
+         <div class="container-text">
+           <p><h1 class="our mission" style="text-align: center; 
+            color: rgb(7, 7, 6);"><span style="font-weight:bold;">How Can everyone get access to Vaccines?</span></h1><br></p>
+           <p> <h2> FUND</br>
+              Donate to the woldwide Vaccination campaign – 
+              a global initiative to share vaccines equally.<br> Your donations 
+              will go towards increasing production and getting doses to 
+              healthcare </br>workers and vulnerable communities around the world.
+              <br><br>
+            COMMUNICATE<br>
+              Use your voice on social media to support the #OnlyTogether campaign 
+              and increase awareness of the need for fair access to vaccines to end the pandemic.<br><br>
+            ADVOCATE<br>
+             Use your voice to tell global leaders they must do more to end the pandemic by 
+             supporting vaccine equity.Tell governments that an equal world means saving lives everywhere.
+            </p></h2></div>
+          <div class="container-image"> 
+            <img src="image2.jpg"  >
+            <img src="image3.jpg"  >
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+      <!--End Service Section-->
+
+  <!--Start Registration Section-->
+
+  <section id="projects">
+    <div class="projects container">
+    <div class="projects-header">
+       <h1 class="section-title" style="text-align: center; 
+        color: rgb(243, 241, 241);">Reg<span>i</span>s<span>t</span>er</h1>
+    </div>
+      <div id='login-form' class='login-page'>
+        <div class="form-box">
+          <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+            <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+          </div>
+          <form id='login' class='input-group-login'>
+            <input type='text' class='input-field' placeholder='Email Id/Mobile no' required>
+            <input type='password' class='input-field' placeholder='Enter Password' required>
+            <input type='checkbox' class='check-box'><span>Remember Password</span>
+            <button type='submit' class='submit-btn'>Log in</button>
+            <a href="#" class="cta">DONATE</a>
+          </form>
+          <form id='register' class='input-group-register'>
+            <input type='text' class='input-field' placeholder='Full Name' required>
+            <input type='password' class='input-field' placeholder='Email Id' required>
+            <input type='text' class='input-field' placeholder='Contact Info' required>
+            <input type='text' class='input-field' placeholder='Country ' required>
+            <input type='email' class='input-field' placeholder='costal Pin' required>
+            <input type='password' class='input-field' placeholder='Amount' required>
+            <input type='checkbox' class='check-box'><span>Plesse Verified before Donating.</span>
+            <button type='submit' class='submit-btn'>Submit</button>
+          </form>
+        </div>
+        </div>
+    </div>
+    </div> 
+
+    <script>
+      var x = document.getElementById('login');
+      var y = document.getElementById('register');
+      var z = document.getElementById('btn');
+      function register() {
+        x.style.left = '-400px';
+        y.style.left = '50px';
+        z.style.left = '110px';
+      }
+      function login() {
+        x.style.left = '50px';
+        y.style.left = '450px';
+        z.style.left = '0px';
+      }
+    </script>
+    <script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+  </section>
+
+  <!--end registration Section-->
+
+  <!--start about section-->
+
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+           <iframe title="vimeo-player" src="https://player.vimeo.com/video/582591066?h=1a6af567dc" 
+           width="560" height="460" frameborder="0" allowfullscreen>
+          </iframe>
+          </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Ab<span>o</span>ut <span>U</span>s</h1>
+        <h2>Help us to help You, Be the one to make a change!</h2>
+        <p>Is it fair that millions of people in a handful of high-income countries have
+          received the vast majority of vaccines before others? In an equal world,
+          during a global health emergency, protecting the vulnerable and saving lives
+          should happen in unity. You can be part of ending the pandemic for us all.
+          As the world confronts its biggest challenge in living memory, there has never 
+          been a greater need for accurate, verified information. Like the virus itself, 
+          misinformation spreads from person-to-person, heightening the risk to health and 
+          spreading fear and division. The world cannot contain the disease and its impacts 
+          without access to trusted, accurate information that promotes science and real 
+          solutions  – and builds solidarity within and between nations.</p>
+      </div>
+    </div>
+  </section>
+  <!-- End about Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="brand">
+      <h1><span>V</span>ACC<span>I</span>NAT<span>I</span>ON</h1>
+      <h2>Lend Your Support</h2>
+    </div>
+    <div class="footer-container">
+      <div class="footer-item">
+        <div><img class="footer-icon" src="https://img.icons8.com/bubbles/100/000000/phone.png">
+          <h1>Toll Free</h1>
+        </div>
+        <h2>854227311295302</h2>
+        <h2>9013151515</h2>
+      </div>
+      <div class="footer-item">
+        <div><img class="footer-icon" src="https://img.icons8.com/bubbles/100/000000/new-post.png">
+          <h1>Email</h1>
+        </div>
+        <h2>hello@shareverified.com</h2>
+        <h2>ncov2019[at]gov[dot]in</h2>
+      </div>
+      <div class="footer-item">
+        <div><img class="footer-icon" src="https://img.icons8.com/bubbles/100/000000/map-marker.png">
+          <h1>Address</h1>
+        </div>
+        <h2>http://www.aboutads.info/choices</h2>
+      </div>
+    </div>
+    <div class="social-icon">
+      <div class="social-item">
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=https://shareverified.com/wp-content/uploads/2021/08/OnlyTogether_Policy_04-3.jpg"><img
+            src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.facebook.com/help/instagram"><img
+            src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"></a>
+      </div>
+      <div class="social-item">
+        <a
+          href="https://twitter.com/intent/tweet?url=https://shareverified.com/wp-content/uploads/2021/08/OnlyTogether_Policy_04-3.jpg&text="><img
+            src="https://img.icons8.com/bubbles/100/000000/twitter.png"></a>
+      </div>
+      <div class="social-item">
+        <a href="https://www.youtube.com/watch?v=WHPfpZqlUBQ"><img
+            src="https://img.icons8.com/bubbles/100/000000/youtube.png"></a>
+      </div>
+    </div>
+    <p>Disclaimer: Copyright_2020@ <span id="oner">Ajit kr Gupta</span>  All rights reserved. </p>
+  </section>
+
+  <!-- End Footer -->
+
+    <script src="./app.js"></script>
+</body>
+</html>
